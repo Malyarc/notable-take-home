@@ -1,0 +1,27 @@
+{
+    "name": "@snackpass/take-home",
+    "version": "1.0.1",
+    "author": "Shri Muthu <shri.muthu@snackpass.co>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+      "client",
+      "server"
+    ],
+    "engines": {
+      "node": "14"
+    },
+    "scripts": {
+      "client": "yarn workspace @snackpass/take-home-client",
+      "server": "yarn workspace @snackpass/take-home-server",
+      "up": "docker compose up --remove-orphans",
+      "up:clean": "docker compose up --remove-orphans --build --force-recreate",
+      "logs": "docker compose logs --follow",
+      "down": "docker compose down",
+      "build": "docker compose build",
+      "start": "yarn up --detach",
+      "stop": "yarn down"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
