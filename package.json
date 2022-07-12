@@ -1,7 +1,7 @@
 {
-  "name": "@snackpass/take-home",
+  "name": "notable-take-home",
   "version": "1.0.1",
-  "author": "Shri Muthu <shri.muthu@snackpass.co>",
+  "author": "John Tang",
   "license": "MIT",
   "main": "server.js",
   "scripts": {
